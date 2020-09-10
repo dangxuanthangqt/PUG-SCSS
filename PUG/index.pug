@@ -28,7 +28,17 @@ body
                                 a(href="#" class="menu__link")  Images
                             li(class="menu__item")
                                 a(href="#" class="menu__link")  Contact
-                    i(class="fas fa-bars menu__collapse")
+                    div(class="menu__dropdown")
+                        i(class="fas fa-bars menu__collapse")
+                        ul(class="menu__dropdown__list")
+                            li(class="menu__dropdown__item")
+                                a(class="menu__dropdown__link") Home
+                            li(class="menu__dropdown__item")
+                                a(class="menu__dropdown__link") About
+                            li(class="menu__dropdown__item")
+                                a(class="menu__dropdown__link") Features
+                            li(class="menu__dropdown__item")
+                                a(class="menu__dropdown__link") Contact
                 div(class="header__content")
                     span( class="header__content-slogan") Spa & beauty Center
                     h1(class="header__content-title") Beauty and success starts here.
@@ -101,8 +111,110 @@ body
                         a(class="btn btn--primary btn--rounded") READ MORE
         section(class="quote")
             div(class="container quote__inner")
-                img(class="quote__img" src="../IMG/quote.png", alt="")
+                img(class="quote__img" src="../IMG/quote.png" alt="")
                 p(class="lineClamp lineClamp--3") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam in aliquid sed magnam ipsam consequuntur, facilis numquam vero, quo quasi placeat nulla, cum repellat at similique? Iusto vero deleniti dicta!
-                img(src="../IMG/client-1.png", alt="" class="author__img")
+                img(src="../IMG/client-1.png" alt="" class="author__img")
                 p(class="author__name") Dang Xuan Thang 
                     span(class="author__name--primary") CEO
+        section(class="team")
+            div(class="container")
+                h2(class="team__title") Experienced Team
+                p(class="team__desc lineClamp lineClamp--3") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quaerat enim, eveniet in quo modi molestias, quidem dolore explicabo sunt quasi quam nobis neque iste quis et! Cumque, assumenda qui!
+                ul(class="team__list")
+
+                    li(class="team__item")
+                        img(src="../IMG/31.jpg" alt="")
+                        div(class="team__item__infor")
+                            h3(class="team__item__name") Justin baby
+                            p(class="team__item__desc") Sun astirek
+                            ul(class="team__social")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-facebook")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-instagram")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-youtube")
+                    li(class="team__item")
+                        img(src="../IMG/31.jpg" alt="")
+                        div(class="team__item__infor")
+                            h3(class="team__item__name") Justin baby
+                            p(class="team__item__desc") Sun astirek
+                            ul(class="team__social")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-facebook")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-instagram")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-youtube")
+                    li(class="team__item")
+                        img(src="../IMG/31.jpg" alt="")
+                        div(class="team__item__infor")
+                            h3(class="team__item__name") Justin baby
+                            p(class="team__item__desc") Sun astirek
+                            ul(class="team__social")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-facebook")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-instagram")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-twitter")
+                                li
+                                    a(class="team__social__link")
+                                        i(class="fab fa-youtube")
+        section(class="contact")
+            div(class="contact__secondary")
+            div(class="contact__primary")
+                form(action="#" class="contact__form")
+                    input(class="contact__input" type="text" placeholder="Name")
+                    input(class="contact__input" type="text" placeholder="Address email")
+                    select(class="contact__input" name="Select service")
+                        option(value="SELECT SERVICE") SELECT SERVICE
+                    input(class="contact__input" type="text" placeholder="Phone number")
+                    input(class="contact__input contact__input--date" type="text" placeholder="DATE" onfocus="(this.type='date')" onblur="(this.type='text')" id="date")
+                    input(class="contact__input" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" placeholder="Time")
+                    input( class="contact__input" type="text" placeholder="Your notes")
+                    button(class="btn btn--primary btn--rounded " type="submit") Make Appointment
+        footer(class="footer")
+            div(class="footer__logo")
+                img(src="../IMG/logo.png" alt="")    
+            nav(class="menu")
+                ul(class="menu__list")
+                    li(class="menu__item")
+                        a(href="#" class="menu__link") Home
+                    li(class="menu__item")
+                        a(href="#" class="menu__link") About
+                    li(class="menu__item")
+                        a(href="#" class="menu__link") Features
+                    li(class="menu__item")
+                        a(href="#" class="menu__link")  Images
+                    li(class="menu__item")
+                        a(href="#" class="menu__link")  Contact     
+            ul(class="footer__social")
+                li
+                    a(class="footer__social__link")
+                        i(class="fab fa-facebook")
+                li
+                    a(class="footer__social__link")
+                        i(class="fab fa-instagram")
+                li
+                    a(class="footer__social__link")
+                        i(class="fab fa-twitter")
+                li
+                    a(class="footer__social__link")
+                        i(class="fab fa-youtube")
+
